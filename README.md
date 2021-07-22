@@ -53,6 +53,7 @@ You can generate it by answering the questions.
 7. set keywords to be used when publishing npm
 8. author information required when publishing npm
 Rights information to be applied when npm is released 9.
+
 ```
 package name: (a) sample
 version: (1.0.0) 0.0.0
@@ -65,7 +66,9 @@ author: your name
 license: (ISC)
 Enter
 ```
+
 Enter when prompted for ok at the end
+
 ``` 
 Is this ok? (yes)
 ```
@@ -140,9 +143,11 @@ node app.js
 Error: listen EADDRINUSE: address already in use :::3000
 ```
 ### Run the following command. 
-``` npx kill-port 3000
+
+```
 npx kill-port 3000
-``` npx kill-port 3000
+```
+
 Now, when you run `node app.js`, it works fine.
 
 ## throw er; // Unhandled 'error' event
@@ -151,29 +156,32 @@ Now, when you run `node app.js`, it works fine.
 
 # The HTML code is displayed as is.
 The second argument of `writeHead` was set to `plain`.
+
 ```
 res.writeHead(200, {'Content-Type': 'text/plain'});
-````
+```
+
 Only text was displayed when changed to `text/html`.
+
 ```
 res.writeHead(200, {'Content-Type': 'text/html'});
 ```
-| code | content | ...
-| --- | --- | Content-Type
-| Content-Type | content-type | text/html
+
+| code | content |
+| --- | --- |
+| Content-Type | content-type |
 | text/html | text data in HTML format |
- Translated with www.DeepL.com/Translator (free version)
- 
- 
- 
- 
- ***
- 
- 
- 
- 
- 
- # Node.js
+
+
+
+
+***
+
+
+
+
+
+# Node.js
 
 ## Node.jsでサーバーを生成するスクリプトを作る
 `createServer`を使ってサーバーを生成する
