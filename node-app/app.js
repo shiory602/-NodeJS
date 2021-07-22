@@ -19,12 +19,39 @@
 
 
 
-// list 2-5
+// // list 2-5
+// const http = require('http');
+// const fs = require('fs');
+
+// var server = http.createServer(
+//     (request, response) => {
+//         fs.readFile('./index.html', 'UTF-8',
+//             (err, data) => {
+//                 response.writeHead(200, {'Content-Type': 'text/html'});
+//                 response.write(data);
+//                 response.end()
+//             });
+//     }
+// );
+
+// server.listen(3000, console.log('server start!'))
+
+
+
+// list 2-6
 const http = require('http');
 const fs = require('fs');
 
-var server = http.createServer(
-    (request, response) => {
+var server = http.createServer(getFromClient)
+server.listen(3000);
+console.log('server start!');
+
+// ここまでメインプログラム ==================
+
+// CreateServerの処理
+    function getFromClient(req, res) {
+        request = req;
+        response = res;
         fs.readFile('./index.html', 'UTF-8',
             (err, data) => {
                 response.writeHead(200, {'Content-Type': 'text/html'});
@@ -32,6 +59,3 @@ var server = http.createServer(
                 response.end()
             });
     }
-);
-
-server.listen(3000, console.log('server start!'))
