@@ -41,7 +41,7 @@ Press ^C at any time to quit.
 Package name: (lab2) 
 ```
 You can generate it by answering the questions.
-(It doesn't matter if you don't answer any of them, just ``Enter``)
+(It doesn't matter if you don't answer any of them, just `Enter`)
 
 ### Questions: 1.
 1. name of the package
@@ -64,9 +64,10 @@ keywords:
 author: your name
 license: (ISC)
 Enter
+```
 Enter when prompted for ok at the end
-``` (yes)
-Is this ok? 
+``` 
+Is this ok? (yes)
 ```
 
 ## Configure the `npm start` script in packege.json
