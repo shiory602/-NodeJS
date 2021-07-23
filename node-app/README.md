@@ -64,3 +64,18 @@ response.end()
 ```
 npm install --save ejs
 ```
+### readFileSync
+同期処理で読み込むメソッド
+`readFile`は非同期処理
+## 値の埋め込み
+ejsファイルのHTMLコードの中に下のコードを使って値を埋め込む
+```js
+<%= ... %>
+```
+レンダリングの第一引数にレンダリングするデータ、第二引数に値をまとめたオブジェクトを指定
+```js
+var content = ejs.render(index_page, {
+    title: 'Index',
+    content: 'This is sample page with template.'
+});
+```
