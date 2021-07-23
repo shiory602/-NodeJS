@@ -1,3 +1,91 @@
+# Use HTML files
+To use HTML files, we use the **File System** object.
+This is provided in Node.js under the ID **fs**.
+## How to use fs
+1. run `require` to get `fs` into the object
+```js
+variable = require('fs')
+```
+2. read files with the method `readFile` in the `fs` object
+```js
+fs.readFile(file path to read, encoding format of the file contents, callback function to execute on completion)
+```
+`readFile` finishes execution instantly, no matter how big the file is, and moves on.
+The reading process is done in the background, and the third argument function is executed after it is completed.
+### callback function for readFile
+When the time-consuming process is finished, the function to be called later
+```js
+(error, data) => { ... Processing ... }
+```
+
+## Replace text
+`replace` searches for the first argument, the search text, in the text and replaces it with the second argument, the replacement text.
+```
+Variable = text .replace( find text, replace text );
+```
+### Regular Expressions
+Use regular expressions to search based on "patterns" of text connections.
+- `g` does a global search.
+```
+/ ... /g
+```
+[Regular expression MDN](https://developer.mozilla.org/ja/docs/orphaned/Web/JavaScript/Guide/Regular_Expressions)
+
+
+# Template engine
+A mechanism for preparing content to be displayed using templates.
+### EJS
+A simple template engine for use with JavaScript.
+EJS stands for **Embedded JavaScript Templates**, and in Node.js it is installed in the package manager.
+To install, type the following command into a terminal
+```
+npm install -g ejs
+```
+## How to display the EJS file
+1. load the template file
+```js
+const index_page = fs.readFileSync('. /index.ejs', 'utf8')
+```
+
+2. rendering
+Generate the actual HTML source code to be displayed based on the contents of the template.
+(You don't need to do this if the template itself is HTML.
+```js
+var content = ejs.render(index_page);
+```
+3. Output the generated display content
+Output the generated display content using ``write`` or other methods.
+```js
+response.writeHead(200, {'Content-Type': 'text/html'});
+response.write(content);
+response.end()
+```
+### Error: Cannot find module 'ejs' is displayed.
+Navigate to the app file with a terminal, do `npm init`, and then execute the following command
+```
+npm install --save ejs
+```
+### readFileSync
+Method to read with synchronous processing
+`readFile` is asynchronous processing.
+## embedding values
+Use the code below to embed a value in the HTML code of an ejs file.
+```js
+<%= ... %>
+```
+The first argument of rendering is the data to be rendered and the second argument is an object containing the values.
+```js
+var content = ejs.render(index_page, {
+    title: 'Index',
+    content: 'This is a sample page with template.'
+});
+```
+
+
+
+***
+
+
 # HTMLファイルを使う
 HTMLファイルを使うには**File System**オブジェクトを使う。
 これは**fs**というIDでNode.jsに用意されている。
