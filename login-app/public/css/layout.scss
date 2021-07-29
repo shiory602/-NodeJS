@@ -1,0 +1,54 @@
+@import 'base';
+
+/* top ================================ */
+body {
+    width: 100%;
+    background-image: url(../images/bgimg.jpg);
+}
+
+.subtitle {
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba($color: $white, $alpha: 0.4);
+    text-align: center;
+    color: rgba($color: $black, $alpha: 0.4);
+}
+
+.login-form {
+    width: 540px;
+    height: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    border: rgba($color: $black, $alpha: 0.4);
+    background: rgba($color: $white, $alpha: 0.6);
+    box-shadow: 0 10px 10px rgba($color: $black, $alpha: 0.4);
+    color: rgba($color: $black, $alpha: 0.6);
+    line-height: 36px;
+
+    .title {
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .label-title {
+        text-align: left;
+        font-weight: 700;
+    }
+
+    .input-form {
+        width: 100%;
+        height: 30px;
+    }
+
+    .login-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+        .remember {
+            padding: 25px;
+        }
+    }
+}

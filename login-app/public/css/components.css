@@ -1,0 +1,65 @@
+/* reset ================================ */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+body {
+  margin: 0;
+  background-color: #f6faff;
+  color: #6c7686;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #2d3133;
+  font-size: 14px;
+}
+
+a:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+/* variable ================================ */
+/* mixin ================================ */
+/* button ================================ */
+.login-button {
+  width: 184px;
+  height: 48px;
+  text-align: center;
+  font-weight: 600;
+  color: #888888;
+  background-color: #ffffff;
+  border: 2px solid #888888;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  color: #ffffff;
+  background-color: #888888;
+}
+/*# sourceMappingURL=components.css.map */

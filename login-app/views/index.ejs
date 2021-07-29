@@ -10,10 +10,10 @@
     <div class="top-wrapper">
         <h2 class="subtitle">Log in page</h2>
         <div class="login-form">
-            <h1 class="title">Welcome!</h1>
-            <form action="/" method="GET">
+            <h1 class="title">Welcome <%= name %>!</h1>
+            <form action="/account" method="GET">
                 <label for="user" class="label-title">Username or Email</label> <br />
-                <input type="text" id="user" class="input-form" /> <br />
+                <input type="text" id="user" name="user" class="input-form" /> <br />
                 <label for="pass" class="label-title">Password</label> <br />
                 <input type="password" id="pass" class="input-form" /> <br />
                 <a class="label-title">Forgotten Password?</a> <br />
@@ -21,7 +21,7 @@
                     <div class="remember">
                         <input type="checkbox" /><span>Remember Me</span>
                     </div>
-                    <button class="login-button">LOG IN</button>
+                    <button href="./account.ejs" class="login-button">LOG IN</button>
                 </div>
             </form>
         </div>
