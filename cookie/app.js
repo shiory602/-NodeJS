@@ -5,8 +5,7 @@ const app = express();
 app.use(cookieParser());
 
 app.get('/', (req, res) => {
-    res.setHeader('Set-Cookie', 'last_access=value;');
-    res.cookie('test', 'hello');
+    res.cookie('test', 'hello', { maxAge: 3600 }); //
     var cookie = req.test;
     res.json(cookie);
 });
