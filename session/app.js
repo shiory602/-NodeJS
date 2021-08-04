@@ -10,15 +10,29 @@ const sess = {
     cookie: { secure: true }
 }
 
-if (app.get('env') === 'production') {
-    app.set('trust proxy', 1) // trust first proxy
-    session.cookie.secure = true // serve secure cookies
-}
+// if (app.get('env') === 'production') {
+//     app.set('trust proxy', 1) // trust first proxy
+//     session.cookie.secure = true // serve secure cookies
+// }
 
 app.use(session(sess))
 
+app.use((req, res, next) => {
+    if (!req.session.views) {
+        req.session.views = {}
+    }
+
+    // get the url path name
+    var pathname = parseurl(req).pathname
+
+    // count the view
+    req.session.views[pathname] = (req.session.views[pathname] || 0) + 1
+
+    next()
+})
+
 app.get('/', (req, res) => {
-    res.send('Hello world')
+    res.send('You viewed this page ' + req.session.views['/'] + ' times')
 })
 
 app.listen('3000', () => {
