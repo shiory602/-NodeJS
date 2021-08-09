@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.12"
+  },
+  "name": "nodelogin",
+  "description": "For this tutorial we'll be doing something a little different, instead of developing applications with PHP we'll be creating a login system with Node.js, Express, and MySQL.",
+  "version": "1.0.0",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon login.js"
+  },
+  "author": "shiori suzuki",
+  "license": "ISC"
+}
