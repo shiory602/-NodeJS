@@ -1,11 +1,13 @@
+// modules
 var mysql = require('mysql');
 var express = require('express');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var path = require('path');
 
+// connect to our database with the following code:
 var connection = mysql.createConnection({
-	host     : 'localhost',
+	host     : '127.0.0.1',
 	user     : 'root',
 	password : '',
 	database : 'nodelogin'
@@ -28,7 +30,8 @@ app.post('/auth', function(request, response) {
 	var username = request.body.username;
 	var password = request.body.password;
 	if (username && password) {
-		connection.query('SELECT * FROM accounts WHERE username = ? AND password = ?', [username, password], function(error, results, fields) {
+		connection.query('SELECT * FROM accounts WHERE username = root AND password = ja', [username, password], function(error, results, fields) {
+			console.log("query result:", results)
 			if (results.length > 0) {
 				request.session.loggedin = true;
 				request.session.username = username;
@@ -53,4 +56,6 @@ app.get('/home', function(request, response) {
 	response.end();
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+	console.log('Server starts on port 3000');
+});
