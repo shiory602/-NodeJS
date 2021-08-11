@@ -24,6 +24,7 @@ This is just a basic login form design we'll use for our login system, the metho
 ```
 
 ## How to install MySQL
+[progate](https://prog-8.com/docs/mysql-env)
 Install with command:
 ```
 npm install mysql
@@ -87,3 +88,14 @@ client.query('DELETE FROM user WHERE name = ?’, [’taro’], function(error, 
 
 })
 ```
+
+# SQL
+### テーブルなどの構造を定義するSQL
+マイグレーション（migration）
+一度実行するだけなので、実際のアプリケーションとは分けて管理する
+### 定義されたテーブルに問い合わせするSQL
+アプリケーションから実行するので、Node.jsのアプリ内にコードを書く
+- SELECT
+- INSERT
+- UPDATE
+- DELETE
