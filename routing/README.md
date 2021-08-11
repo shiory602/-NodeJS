@@ -39,10 +39,23 @@ app.delete('/user', function (req, res) {
 ```
 
 # ルーティングの使い方
+## 基本のルート
+URLオブジェクトで、URLのデータをパース処理（データを解析して本来の状態に組み立て直す）する。
+これによってドメイン化のパス部分の値をチェックし、それに応じて処理を分岐する。
+```js
+const url = require('url');
+
+var url_parts = url.parse(request.url);
+switch(url_parts.pathname) {
+  case "/":
+    "/"にアクセスした時の処理
+    break;
+}
+```
 - [app.all()](http://expressjs.com/ja/4x/api.html#app.all): 全てのHTTPメソッドを制御する
 - [app.use()](http://expressjs.com/ja/4x/api.html#app.use): ミドルウェアを指定する
 
-基本のルート
+## Express版・基本のルート
 ```js
 var express = require('express')
 var app = express()
