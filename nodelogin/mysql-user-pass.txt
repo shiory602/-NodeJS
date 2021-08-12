@@ -1,0 +1,329 @@
+ShioriSuzuki@suzukishiorinoMacBook-ea nodelogin % npm start
+
+> nodelogin@1.0.0 start
+> nodemon login.js
+
+[nodemon] 2.0.12
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node login.js`
+Server starts on port 3000
+query result: undefined
+/Users/ShioriSuzuki/programing/Node/nodelogin/login.js:35
+                        if (results.length > 0) {
+                                    ^
+
+TypeError: Cannot read property 'length' of undefined
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/login.js:35:16)
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:404:18
+    at Array.forEach (<anonymous>)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:403:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node login.js`
+Server starts on port 3000
+^[[B^[[Aquery result: undefined
+error result: Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: NO)
+    at Handshake.Sequence._packetToError (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:116:18)
+    at Connection._implyConnect (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:454:10)
+    at Connection.query (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:196:8)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/login.js:33:14
+    at Layer.handle [as handle_request] (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/layer.js:95:5) {
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+  sqlState: '28000',
+  fatal: true
+}
+/Users/ShioriSuzuki/programing/Node/nodelogin/login.js:36
+                        if (results.length > 0) {
+                                    ^
+
+TypeError: Cannot read property 'length' of undefined
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/login.js:36:16)
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:404:18
+    at Array.forEach (<anonymous>)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:403:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node login.js`
+Server starts on port 3000
+query result: undefined
+error result: Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: NO)
+    at Handshake.Sequence._packetToError (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:116:18)
+    at Connection._implyConnect (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:454:10)
+    at Connection.query (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:196:8)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/login.js:33:14
+    at Layer.handle [as handle_request] (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/layer.js:95:5) {
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+  sqlState: '28000',
+  fatal: true
+}
+/Users/ShioriSuzuki/programing/Node/nodelogin/login.js:36
+                        if (results.length > 0) {
+                                    ^
+
+TypeError: Cannot read property 'length' of undefined
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/login.js:36:16)
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:404:18
+    at Array.forEach (<anonymous>)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:403:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node login.js`
+Server starts on port 3000
+query result: undefined
+error result: Error: ER_BAD_FIELD_ERROR: Unknown column 'root' in 'where clause'
+    at Query.Sequence._packetToError (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:198:25)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/login.js:33:14
+    at Layer.handle [as handle_request] (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/index.js:275:10) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'root' in 'where clause'",
+  sqlState: '42S22',
+  index: 0,
+  sql: 'SELECT * FROM accounts WHERE username = root AND password = test'
+}
+/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:437
+      throw err; // Rethrow non-MySQL errors
+      ^
+
+TypeError: Cannot read property 'length' of undefined
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/login.js:36:16)
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query.ErrorPacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
+    at Protocol._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:88:28)
+[nodemon] app crashed - waiting for file changes before starting...
+^[[1;2B[nodemon] restarting due to changes...
+[nodemon] starting `node login.js`
+Server starts on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node login.js`
+Server starts on port 3000
+query result: undefined
+error result: Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'test'@'localhost' (using password: YES)
+    at Handshake.Sequence._packetToError (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:116:18)
+    at Connection._implyConnect (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:454:10)
+    at Connection.query (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:196:8)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/login.js:33:14
+    at Layer.handle [as handle_request] (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/layer.js:95:5) {
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sqlMessage: "Access denied for user 'test'@'localhost' (using password: YES)",
+  sqlState: '28000',
+  fatal: true
+}
+/Users/ShioriSuzuki/programing/Node/nodelogin/login.js:36
+                        if (results.length > 0) {
+                                    ^
+
+TypeError: Cannot read property 'length' of undefined
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/login.js:36:16)
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:404:18
+    at Array.forEach (<anonymous>)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:403:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node login.js`
+Server starts on port 3000
+query result: undefined
+error result: Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'test'@'localhost' (using password: YES)
+    at Handshake.Sequence._packetToError (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:116:18)
+    at Connection._implyConnect (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:454:10)
+    at Connection.query (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:196:8)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/login.js:33:14
+    at Layer.handle [as handle_request] (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/layer.js:95:5) {
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sqlMessage: "Access denied for user 'test'@'localhost' (using password: YES)",
+  sqlState: '28000',
+  fatal: true
+}
+/Users/ShioriSuzuki/programing/Node/nodelogin/login.js:36
+                        if (results.length > 0) {
+                                    ^
+
+TypeError: Cannot read property 'length' of undefined
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/login.js:36:16)
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:404:18
+    at Array.forEach (<anonymous>)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:403:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node login.js`
+Server starts on port 3000
+query result: undefined
+error result: Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: NO)
+    at Handshake.Sequence._packetToError (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Handshake.ErrorPacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+    at Protocol._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    --------------------
+    at Protocol._enqueue (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:116:18)
+    at Connection._implyConnect (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:454:10)
+    at Connection.query (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:196:8)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/login.js:33:14
+    at Layer.handle [as handle_request] (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/express/lib/router/layer.js:95:5) {
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sqlMessage: "Access denied for user 'root'@'localhost' (using password: NO)",
+  sqlState: '28000',
+  fatal: true
+}
+/Users/ShioriSuzuki/programing/Node/nodelogin/login.js:36
+                        if (results.length > 0) {
+                                    ^
+
+TypeError: Cannot read property 'length' of undefined
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/login.js:36:16)
+    at Query.<anonymous> (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:526:10)
+    at Query._callback (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/Connection.js:488:16)
+    at Query.Sequence.end (/Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:404:18
+    at Array.forEach (<anonymous>)
+    at /Users/ShioriSuzuki/programing/Node/nodelogin/node_modules/mysql/lib/protocol/Protocol.js:403:13
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node login.js`
+Server starts on port 3000
+query result: [
+  RowDataPacket {
+    id: 1,
+    username: 'test',
+    password: 'test',
+    email: 'test@test.com'
+  }
+]
+error result: null
+query result: [
+  RowDataPacket {
+    id: 1,
+    username: 'test',
+    password: 'test',
+    email: 'test@test.com'
+  }
+]
+error result: null

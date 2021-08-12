@@ -90,6 +90,7 @@ client.query('DELETE FROM user WHERE name = ?’, [’taro’], function(error, 
 ```
 
 # SQL
+[mysql](https://github.com/mysqljs/mysql#performing-queries)
 ### テーブルなどの構造を定義するSQL
 マイグレーション（migration）
 一度実行するだけなので、実際のアプリケーションとは分けて管理する
@@ -99,3 +100,8 @@ client.query('DELETE FROM user WHERE name = ?’, [’taro’], function(error, 
 - INSERT
 - UPDATE
 - DELETE
+
+## log in MySQL
+```
+mysql --user=root --password
+```

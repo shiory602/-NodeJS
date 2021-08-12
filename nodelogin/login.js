@@ -9,7 +9,7 @@ var path = require('path');
 var connection = mysql.createConnection({
 	host     : '127.0.0.1',
 	user     : 'root',
-	password : '',
+	password : 'test',
 	database : 'nodelogin'
 });
 
@@ -30,8 +30,9 @@ app.post('/auth', function(request, response) {
 	var username = request.body.username;
 	var password = request.body.password;
 	if (username && password) {
-		connection.query('SELECT * FROM accounts WHERE username = root AND password = ja', [username, password], function(error, results, fields) {
+		connection.query('SELECT * FROM accounts WHERE username = "test" AND password = "test"', [username, password], function(error, results, fields) {
 			console.log("query result:", results)
+			console.log("error result:", error)
 			if (results.length > 0) {
 				request.session.loggedin = true;
 				request.session.username = username;
