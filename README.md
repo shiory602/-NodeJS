@@ -43,7 +43,7 @@ Package name: (lab2)
 You can generate it by answering the questions.
 (It doesn't matter if you don't answer any of them, just `Enter`)
 
-### Questions: 1.
+### Questions:
 1. name of the package
 2. version: Asked if you want to generate the version (1.0.0). 3.
 3. summary description 4.
